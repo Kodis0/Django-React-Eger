@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: #1C2E1D;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.headerwrapper {
+  width: 100%;
+  height: 920px;
+}
+
+/*Стили для логотипа*/
+header .logo {
+  font-weight: 600px;
+  font-size: 20px;
+}
+
+header .presentation {
+  width: 100%;
+  height: 920px;
+  background: url('./images/IMG_1093 1.png') no-repeat center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(32, 32, 31, 0.60);
+  background-position: center center;
+}
+
+.ang {
+  text-decoration: none;
+  position: fixed;
+  font-size: 14px;
+  line-height: 130%;
+  font-family: 'Raleway';
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 5%;
+  width: 100px;
+  z-index: 1;
+  transition: color 0.7s ease-in-out;
+}
+
+.ang.visible {
+  color: black;
+}
+
+.custom-link {
+  text-decoration: none;
+  position: fixed;
+  left: calc(100% - 230px);
+  width: 300px;
+  font-family: 'Montserrat';
+  line-height: 130%;
+  font-size: 14px;
+  padding-top: 12px;
+  font-weight: 400;
+  word-wrap: break-word;
+  transition: color 0.7s ease;
+  z-index: 1;
+  color: white;
+}
+
+.custom-link.visible {
+  color: black;
+}
+
+/* Это класс иконки локации возле надписи Ангарск в шапке*/
+.iconloc {
+  padding-left: 68px;
+  padding-top: 13px;
+  position: fixed;
+  z-index: 1;
+}
+
+/*-------------------------------------*/
+.menu {
+  position: fixed;
+  top: 83px;  /* или другое значение для точного позиционирования */
+  left: 72px; /* или другое значение для точного позиционирования */
+  width: 21px;  /* размер SVG */
+  height: 18px; /* размер SVG */
+  z-index: 1;
+  transition: transform .3s ease;
+}
+
+.menu path {
+  transition: transform .3s ease, opacity .3s ease;
+  transform-origin: center;
+}
+
+.menu path:nth-child(1),
+.menu path:nth-child(3) {
+  transform-origin: center;
+}
+
+.menu:hover path:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu:hover path:nth-child(2) {
+  opacity: 0;
+}
+
+.menu:hover path:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/*-------------------------------------*/
+.logo {
+  background: url(./logo/LogoNormal.png) no-repeat;
+  height: 88px;
+  width: 72px;
+  flex-shrink: 0;
+  z-index: 1;
+  left: 50%;
+  top: 56px;
+  position: fixed;
+  transform: translateX(-50%);
+  transition: opacity 0.7s ease;
+}
+
+
+.logo.visible {
+  background: url(./logo/LogoNormalBlack.png) no-repeat;
+}
+
+.searchicon {
+  position: fixed;
+  left: 87.7%;
+  top: 87px;
+  z-index: 1;
+}
+
+.shopicon {
+  left: 90.5%;
+  top: 88px;
+  position: fixed;
+  z-index: 1;
+}
+
+.lkicon {
+  position: fixed;
+  top: 87px;
+  left: 93.3%;
+  z-index: 1;
+}
+
+/*Первый прямоугольник*/
+.headerrectangle {
+  height: 44px;
+  width: 100%;
+  background-color: #F6F6F6;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  position: fixed;
+}
+
+.headerrectangle.visible {
+  opacity: 1;
+}
+/*------------------------*/
+
+/*Второй прямоугольник*/
+.headerrectangle2 {
+  background-color: white;
+  width: 100%;
+  height: 112px;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+  position: fixed;
+  top: 44px;
+}
+
+.headerrectangle2.visible {
+  opacity: 1;
+}
+/*------------------------*/
+
+
+/*-------------------MAINBODY-------------------*/
+.maintext {
+  color: #1C2E1D;
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  width: 690.3px;
+  height: 322.4px;
+  position: absolute;
+}
+
+.mainwrapper {
+  position: relative;
+  margin-left: 93.6px;
+}
+
+.image1 {
+  background: url(./images/image1.png) no-repeat;
+  height: 500px;
+  width: 1000px;
+  position: absolute;
+  margin-left: 804px;
+  
+}
+
+.image2 {
+  background: url(./images/image2.png) no-repeat;
+  width: 547.3px;
+  height: 661.7px;
+  position: absolute;
+  left: 1260px;
+  max-width: 547.3px;
+  max-height: 661.7px;
+}
+
+.image3 {
+  background: url(./images/image3.png) no-repeat;
+  width: 706px;
+  height: 242px;
+  position: absolute;
+  margin-top: 300px;
+}
+
+.image4 {
+  background: url(./images/image4.png) no-repeat;
+  position: absolute;
+  width: 405.6px;
+  height: 213.2px;
+  margin-left: 804px;
+  margin-top: 363px;
+} 
+
+.egermain {
+  background: url(./images/EgerVector.png) no-repeat;
+  position: relative;
+  width: 543px;
+  height: 140px;
+  left: 50%;
+  top: 382px;
+  transform: translateX(-50%);
+  top: -500px;
+}
+
+.mainbody {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 761px;
+}
+
+.textgril {
+  width: 118px;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  left: 1110px;
+  top: -476px;
+}
+
+
+/*--------------FOOTER--------------*/
+.footerwrapper {
+  width: 100%;
+  height: 347px;
+  margin: 0;
+  padding: 0;
+}
+
+.mainrectangle {
+  width: 100%;
+  height: 461px;
+  background-color: #1C2E1D;
+  display: flex;
+  align-items: center;
+}
+
+.logofooter {
+  background: url(./logo/LogoNormal.png) no-repeat center center;
+  width: 100px;
+  height: 86px;
+  margin-left: 93.6px; 
+  margin-bottom: 56px; /* Отступ снизу для логотипа */
+}
+
+.ralewaytext {
+  display: flex;
+  justify-content: space-around; /* Равномерное распределение элементов */
+  margin-left: 50px; /* Отступ между логотипом и текстом */
+}
+
+.footang, .footdeliv, .footcollab{
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: 'Raleway';
+  color: #fff;
+  text-align: left;
+  margin-top: -56px;
+  margin-inline: 170px;
+  margin-bottom: 20px; /* Отступ снизу для заголовков */
+}
+
+.footcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footangtext, .footdelnumb, .footcollabmail {
+  font-size: 16px;
+  line-height: 120%;
+  font-family: 'Raleway';
+  color: #fff;
+  margin-top: 0;
+  padding-left: 170px;
+}
+
+.footdis, .footover {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Raleway';
+  text-align: left;
+}
+/*------------------------------------*/
