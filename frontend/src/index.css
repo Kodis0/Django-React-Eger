@@ -344,3 +344,13 @@ header .presentation {
   text-align: left;
 }
 /*------------------------------------*/
+
+
+/* Тестовый коммит */
+
+.footdis, .footover {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Raleway';
+  text-align: left;
+}
