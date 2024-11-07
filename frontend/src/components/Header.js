@@ -37,7 +37,7 @@ export default function Header() {
           <div className='presentation'>
             <div className={`ang ${isVisible ? 'visible' : ''}`} ref={angRef}>
               <div className='locationicon'>
-                <a href="https://2gis.ru/angarsk/firm/70000001029237801/103.834694%2C52.502292?m=103.834835%2C52.502191%2F19.33">Ангарск </a>
+                <a href="https://2gis.ru/angarsk/firm/70000001029237801/103.834694%2C52.502292?m=103.834835%2C52.502191%2F19.33">Ангарск</a>
               </div>
             </div>
               <div className='phonenumb'>
